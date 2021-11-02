@@ -1,0 +1,40 @@
+header {
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+}
+
+section {
+    background-color: palevioletred;
+    justify-content: flex-end;
+}
+
+
+h1 {
+    font-family: Futura Hv BT;
+    font-size: 550%;
+}
+
+h2 {
+    font-family: Futura Hv BT;
+    font-size: 350%;
+    font-style: normal;
+    color: crimson;
+}
+
+div {
+    font-family: Futura Hv BT;
+    font-size: 110%;
+    font-style: oblique;
+
+}
+
+
+img {
+    width: 20%;
+    height: 20%;
+    filter: saturate(0);
+}
+
+a:hover img {
+    filter: saturate(1);
+}
