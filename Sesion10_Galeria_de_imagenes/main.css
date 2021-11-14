@@ -1,39 +1,40 @@
 header {
     background-color: rgb(255, 255, 255);
-    text-align: left;
+    justify-content: flex-start;
 }
 
-section {
-    background-color: palevioletred;
-    text-align:left;
+.galeria {
+    
+    background-color:floralwhite;
+    
+  
+   
+   
 }
 
 
 h1 {
     font-family: Futura Hv BT;
     font-size: 550%;
+    color: red;
 }
 
-h2 {
-    font-family: Futura Hv BT;
-    font-size: 350%;
-    font-style: normal;
-    color: crimson;
-}
+
 
 div {
     font-family: Futura Hv BT;
-    font-size: 110%;
-    font-style: oblique;
+    font-size: 130%;
+    font-style: bold;
 
 }
 
 
 img {
     width: 20%;
-    height: 20%;    
+    height: 20%;
+    filter: saturate(0);
 }
 
 a:hover img {
-    filter: saturate;
+    filter: saturate(1);
 }
