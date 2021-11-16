@@ -1,13 +1,24 @@
 header {
+    box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    justify-content: flex-start;
+   margin: 0;
+   padding: 0;
 }
 
 .galeria {
     
-    background-color:floralwhite;
+    width: 150%;
+    height: 100vh;
+    /* height: 900px;*/
+    /*background-color: floralwhite;*/  
     
-  
+flex-direction: column;
+flex-wrap: wrap;
+/*justify-content: space-between;*/
+align-items: scretch;
+max-width: 80%;
+min-width: none;
+
    
    
 }
