@@ -42,7 +42,11 @@ main #texto {
 main #leyendaimagen {
     width: 50px;
     height: auto;
-    flex-direction:row;
+   display:block;
+position:relative; 
+left: 20px;
+top:20px;
+
     padding-left: 50%;
     
 }
