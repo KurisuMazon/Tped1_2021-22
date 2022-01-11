@@ -3,16 +3,15 @@
     padding: 0%;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: Fuente1;
-    src: url(Caveat-VariableFont_wght.ttf);
-  }
+
 body{
-    display: flex;
+    display: block;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-   
 }
 
+#lista ul{
+    height: 12px;
+    width: 5px;
+    list-style-type: none;
+    
+}
