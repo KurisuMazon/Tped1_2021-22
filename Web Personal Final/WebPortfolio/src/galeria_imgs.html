@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="utf-8">
+  <title>Kurisu Mazón_Portfolio</title>
+  <link rel="stylesheet" href="estilos_galeria.css">
+</head>
+
+<body>
+  <!-- Images used to open the lightbox -->
+  <div class="row">
+    <div class="column">
+      <img src="Imgs/Ilustración/Min_01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Ilustración/Min_02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Ilustración/Min_03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Ilustración/Min_04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Diseño/senal_min_01.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Diseño/senal_min_02.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Diseño/senal_min_03.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Diseño/senal_min_04.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Fotografía/foto_min_01.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Fotografía/foto_min_02.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Fotografía/foto_min_03.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="Imgs/Fotografía/foto_min_04.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+    </div>
+
+
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 12</div>
+          <img src="Imgs/Ilustración/Max_01.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 12</div>
+          <img src="Imgs/Ilustración/Max_02.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 12</div>
+          <img src="Imgs/Ilustración/Max_03.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Ilustración/Max_04.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Diseño/senal_max_01.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Diseño/senal_max_02.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Diseño/senal_max_03.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Diseño/senal_max_04.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Fotografía/foto_max_01.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Fotografía/foto_max_02.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Fotografía/foto_max_03.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img src="Imgs/Fotografía/foto_max_04.jpg" style="width:100%">
+        </div>
+
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="Imgs/Ilustración/Min_01.jpg" onclick="currentSlide(1)" alt="Mattepainting">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="Imgs/Ilustración/Min_02.jpg" onclick="currentSlide(2)" alt="Chica">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="Imgs/Ilustración/Min_03.jpg" onclick="currentSlide(3)" alt="Son Gohan SSJ2">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="Imgs/Ilustración/Min_04.jpg" onclick="currentSlide(4)" alt="The boys">
+        </div>
+        <div class="column">
+          <img class="demo" src="Imgs/Diseño/senal_min_01.jpg" onclick="currentSlide(5)"
+            alt="Señalética EASDA_Área Impresión">
+        </div>
+        <div class="column">
+          <img class="demo" src="Imgs/Diseño/senal_min_02.jpg" onclick="currentSlide(6)"
+            alt="Señalética EASDA_Informática">
+        </div>
+      </div>
+      <div class="column">
+        <img class="demo" src="Imgs/Diseño/senal_min_03.jpg" onclick="currentSlide(7)"
+          alt="Señalética EASDA_Biblioteca">
+      </div>
+      <div class="column">
+        <img class="demo" src="Imgs/Diseño/senal_min_04.jpg" onclick="currentSlide(8)" alt="Señalética EASDA_Aseos">
+      </div>
+      <div class="column">
+        <img class="demo" src="Imgs/Fotografía/foto_min_01.jpg" onclick="currentSlide(9)"
+          alt="Fotografía_Contemplando el silencio">
+      </div>
+      <div class="column">
+        <img class="demo" src="Imgs/Fotografía/foto_min_02.jpg" onclick="currentSlide(10)"
+          alt="Fotografía_Contemplando el silencio">
+      </div>
+      <div class="column">
+        <img class="demo" src="Imgs/Fotografía/foto_min_03.jpg" onclick="currentSlide(10)"
+          alt="Fotografía_Contemplando el silencio">
+      </div>
+      <div class="column">
+        <img class="demo" src="Imgs/Fotografía/foto_min_04.jpg" onclick="currentSlide(10)"
+          alt="Fotografía_Contemplando el silencio">
+      </div>
+    </div>
+
+  </div>
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+</body>
+
+</html>

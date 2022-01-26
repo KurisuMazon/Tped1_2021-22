@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
+    display: block;
+    flex-flow: row wrap;
+    background: mediumvioletred;
+
+}
+h2{
+    font-size: larger;
+ 
+}
+  
+
+
+h3{
+    font-size: medium;
+    font-weight:bold;
+    
+}
+
+
+header #logo {
+position:fixed;
+top:0;
+}
+
+nav{
+    position:relative;
+}
+header nav{
+    top:0 px;
+   
+}
+nav ul{
+    display:flex;
+    justify-content: space-between;
+    height: 20vh;
+    width:100%;
+    overflow:hidden;
+    list-style-type: none;
+   
+}
+header nav li{
+    width: 20ex;
+    text-transform: uppercase;
+
+}
+header nav {
+    position: fixed;
+    top: 0;
+    right: 50px;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100%;
+    overflow: hidden;
+}
